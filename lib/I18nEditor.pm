@@ -26,7 +26,7 @@
     { my ($self) = @_
     ; $self->pipeline->add_segment
         ( new dIngle::Server::Segment::dIngle::Query(as_cgi => 1)
-        , new I18nEditor::Segment::Prepare()
+        , new I18nEditor::Server::Segment::Prepare()
         , new dIngle::Server::Segment::dIngle(module => 'I18nEdit')
         , new I18nEditor::Segment::Formular()
         , new I18nEditor::Segment::Page()
