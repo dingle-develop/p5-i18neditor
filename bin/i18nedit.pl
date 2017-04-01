@@ -1,12 +1,12 @@
 ; use dIngle::Application
 # Lokale site-lib laden
 ; use dIngle::Library ('config','.')
-; use dIngle::Server::I18nEditor
+; use I18nEditor::Server
 ; use dIngle
 
 ; $dIngle::I18N::ALL_LANGUAGES = 1
 
-; my $serv = create  dIngle::Server::I18nEditor
+; my $serv = create  I18nEditor::Server
 ; die $! unless $serv
 
 ; $serv->load_segments

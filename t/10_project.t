@@ -2,10 +2,10 @@
 ; use Test::More tests => 6
 
 ; BEGIN
-    { use_ok("dIngle::Project::I18nEditor")
+    { use_ok("I18nEditor::Project")
     }
     
-; my $prj = dIngle::Project::I18nEditor->new
+; my $prj = I18nEditor::Project->new
 
 ; isa_ok($prj,'dIngle::Project')
 
@@ -14,7 +14,7 @@
 
 ; is( $prj->configuration, undef, 'no default configuration')
 ; is( $prj->basedir, undef,'no default basedir')
-; is( $prj->namespace, 'dIngle::I18nEditor', 'namespace ' . $prj->namespace)
+; is( $prj->namespace, 'I18nEditor', 'namespace ' . $prj->namespace)
 
 #; use 5.014; use Data::Dumper
 #; say Dumper($prj)

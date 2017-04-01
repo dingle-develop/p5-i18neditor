@@ -10,4 +10,5 @@ Installation
 - use Build.PL to install dependencies
 - use dingle to install site-lib and dingle-lib
 - rename ENV.sh.sample to ENV.sh and load it
+- start webserver with perl bin/i18nedit.pl
 - have fun

@@ -1,9 +1,9 @@
-  package dIngle::I18nEditor
-# ****************************
-; our $VERSION='0.02'
+  package I18nEditor
 # ******************
+; our $VERSION='0.02'
+# *******************
 ; use strict; use warnings; use utf8
-; use base 'dIngle::Server::OpenFrame'
+; use parent 'dIngle::Server::OpenFrame'
 
 ; use dIngle::Application
 
@@ -26,10 +26,10 @@
     { my ($self) = @_
     ; $self->pipeline->add_segment
         ( new dIngle::Server::Segment::dIngle::Query(as_cgi => 1)
-        , new dIngle::Server::Segment::I18nEditor::Prepare()
+        , new I18nEditor::Segment::Prepare()
         , new dIngle::Server::Segment::dIngle(module => 'I18nEdit')
-        , new dIngle::Server::Segment::I18nEditor::Formular()
-        , new dIngle::Server::Segment::I18nEditor::Page()
+        , new I18nEditor::Segment::Formular()
+        , new I18nEditor::Segment::Page()
         )
     }
     

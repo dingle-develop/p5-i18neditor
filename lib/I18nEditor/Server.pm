@@ -1,5 +1,5 @@
-  package dIngle::I18nEditor::Server
-# **********************************
+  package I18nEditor::Server
+# **************************
 ; our $VERSION='0.01'
 # ******************
 ; use strict; use warnings; use utf8
