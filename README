@@ -1,0 +1,13 @@
+
+I18nEditor
+==========
+A simple web based editor for editing .po files
+
+Installation
+------------
+- install dIngle (not possible yet)
+- install App::dingle
+- use Build.PL to install dependencies
+- use dingle to install site-lib and dingle-lib
+- rename ENV.sh.sample to ENV.sh and load it
+- have fun
