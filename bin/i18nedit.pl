@@ -2,7 +2,18 @@
 # Lokale site-lib laden
 ; use dIngle::Library ('config','.')
 ; use I18nEditor::Server
+; use I18nEditor::Project
 ; use dIngle
+; use dIngle::Waypoint
+
+; BEGIN 
+  { $dIngle::LOGGING    = 'Log::Log4Perl'
+  }
+
+; my $project = I18nEditor::Project->new
+; dIngle::Waypoint::Init->project($project)
+; dIngle->project($project)
+; dIngle->module('I18nEditor')
 
 ; $dIngle::I18N::ALL_LANGUAGES = 1
 
@@ -20,4 +31,10 @@
 ; $serv->print_listening()
 ; $serv->run()
 
+; END
+    { if(0)
+        { require Module::Versions::Report
+        ; print Module::Versions::Report::report()
+        }
+    }
 

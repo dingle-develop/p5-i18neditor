@@ -1,5 +1,6 @@
-; use Test::dIngle::Light
+; use lib 'lib/'
 ; use strict; use warnings
+; use Sub::Uplevel
 
 ; use dIngle::Library ('config','.')
 

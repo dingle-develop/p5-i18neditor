@@ -1,3 +1,4 @@
+blib/
 Build
 _build/
 *~
@@ -6,3 +7,4 @@ MYMETA.json
 ENV.sh
 site-lib/
 dingle-lib/
+logs/
