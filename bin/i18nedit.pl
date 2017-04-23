@@ -18,9 +18,11 @@
 #; dIngle->project($project)
 ; dIngle->module('I18nEditor')
 
+; dIngle->init( dIngle->module )
+
 ; $dIngle::I18N::ALL_LANGUAGES = 1
 
-; my $serv = create  I18nEditor::Server
+; my $serv = create  I18nEditor::Server::
 ; die $! unless $serv
 
 ; $serv->load_segments

@@ -32,4 +32,7 @@
 
 __END__
 
+=head1 NAME
+
+I18nEditor::Server
 

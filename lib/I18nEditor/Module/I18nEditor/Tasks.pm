@@ -69,7 +69,8 @@
     { PERFORM => sub
         { my ($obj) = @_
         ; $obj->stash( pageid => 'frameset' )
-        ; $obj << make("dIngle Site")
+        ; $obj << make("Struct Use","Site")
+        ; ""
         }
     })
 
