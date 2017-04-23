@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 ; use dIngle::Application
 # Lokale site-lib laden
 ; use dIngle::Library ('config','.')
@@ -11,8 +13,9 @@
   }
 
 ; my $project = I18nEditor::Project->new
-; dIngle::Waypoint::Init->project($project)
-; dIngle->project($project)
+; dIngle::Waypoint::Init
+    ->project($project,{config => $project->config})
+#; dIngle->project($project)
 ; dIngle->module('I18nEditor')
 
 ; $dIngle::I18N::ALL_LANGUAGES = 1
