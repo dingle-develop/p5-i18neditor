@@ -24,7 +24,7 @@
 ; $prj->basedir(Cwd::getcwd())
 ; is($prj->basedir, Cwd::getcwd())
 
-; $prj->load_config()
+; $prj->load_config(config => $prj->config)
 ; isa_ok( $prj->configuration, 'dIngle::Project::Configuration',
  'configuration')
 ; is( $prj->namespace, 'I18nEditor', 'namespace ' . $prj->namespace)

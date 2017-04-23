@@ -4,9 +4,6 @@
 # *********************
 ; use parent 'dIngle::Server::Segment'
 
-; package dIngle::Server::Segment::I18nEditor::Page
-; use base 'dIngle::Server::Segment::I18nEditor'
-
 ; use OpenFrame::Response
 ; use URI
 
