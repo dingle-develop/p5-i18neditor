@@ -15,6 +15,8 @@
         }
     }
 
+; sub config { './config/' . $_[0]->name . '.conf' }
+
 ; 1
 
 __END__
