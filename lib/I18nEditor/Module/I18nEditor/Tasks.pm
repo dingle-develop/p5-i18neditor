@@ -70,7 +70,6 @@
         { my ($obj) = @_
         ; $obj->stash( pageid => 'frameset' )
         ; $obj << make("Struct Use","Site")
-        ; ""
         }
     })
 
@@ -101,7 +100,7 @@
     { PERFORM => sub
         { my ($obj,$cgi) = @_
         ; $obj->stash( pageid => 'formular', cgi => $cgi )
-        ; $obj << make("dIngle Site")
+        ; $obj << make("Struct Use","Site")
         }
     })
 
@@ -112,8 +111,9 @@
 
     ; $domain =~ s/ /_/    
     
-    ; my %languages = dIngle::I18N::_get_language_source($domain)
-    
+    ; my %languages = dIngle::I18N::_get_language_source
+        ($domain,$obj->config_entry("development","devroot"))
+
     # Erzeuge aus dem Formularinhalt die po Objekte in einer hashref
     ; my $poform = make("I18e process Formular"
         , cgi       => $cgi
@@ -197,7 +197,7 @@
     { my ($obj,$domain) = @_
     ; my $dm = Div("domain: ",Span($domain)->style("font-family: monospace"))
     
-    ; my $fl   = make("I18e Show loaded files",$domain)
+    ; my $fl = make("I18e Show loaded files",$domain)
     
     ; node($dm,$fl)
     })
